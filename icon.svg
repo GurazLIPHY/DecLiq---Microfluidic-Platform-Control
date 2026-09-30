@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="100%" height="100%">
+  <!-- Fond squircle sombre -->
+  <rect width="256" height="256" rx="56" fill="#0f172a"/>
+  
+  <!-- Corps supérieur de la goutte -->
+  <path d="M128 36 C128 36 64 118 64 162 A64 64 0 0 0 192 162 C192 118 128 36 128 36 Z" 
+        fill="#0284c7"/>
+  
+  <!-- Phase inférieure / Ménisque concave -->
+  <path d="M66 152 C100 182 156 182 190 152 A64 64 0 0 1 128 226 A64 64 0 0 1 66 152 Z" 
+        fill="#00f5d4"/>
+  
+  <!-- Reflet optique minimaliste -->
+  <circle cx="104" cy="116" r="10" fill="#ffffff" opacity="0.65"/>
+</svg>

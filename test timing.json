@@ -1,0 +1,45 @@
+[
+    {
+        "type": "AV801",
+        "addr": 9,
+        "port": 8
+    },
+    {
+        "type": "AV201",
+        "addr": 5,
+        "canal": 1,
+        "action": "S1"
+    },
+    {
+        "type": "Pump",
+        "pump_id": 1,
+        "action": "Aspiration (withdraw)",
+        "debit": 0.25,
+        "unite": "mL/min"
+    },
+    {
+        "type": "Pause",
+        "duree": {
+            "valeur": 5.0,
+            "unite": "Secondes (s)"
+        }
+    },
+    {
+        "type": "AV801",
+        "addr": 9,
+        "port": 1
+    },
+    {
+        "type": "AV201",
+        "addr": 5,
+        "canal": 1,
+        "action": "S3"
+    },
+    {
+        "type": "Pump",
+        "pump_id": 1,
+        "action": "Arr\u00eat (STOP)",
+        "debit": 0.25,
+        "unite": "\u00b5L/min"
+    }
+]
