@@ -1,12 +1,19 @@
 # -*- mode: python ; coding: utf-8 -*-
 
-
 a = Analysis(
     ['frontend_gui.py'],
     pathex=[],
-    binaries=[],
-    datas=[('icon.svg', '.')],
-    hiddenimports=['serial', 'serial.tools.list_ports', 'PyQt6.sip'],
+    binaries=[
+        ('uProcess_x64.pyd', '.'),  # Embarque la DLL LabSmith à la racine du bundle
+    ],
+    datas=[
+        ('icon.svg', '.'),
+    ],
+    hiddenimports=[
+        'serial',
+        'serial.tools.list_ports',
+        'PyQt6.sip',
+    ],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
@@ -26,7 +33,7 @@ exe = EXE(
     bootloader_ignore_signals=False,
     strip=False,
     upx=True,
-    console=True,
+    console=False,  # Fenêtre pure (pas d'invite de commande noire en arrière-plan)
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
@@ -34,6 +41,7 @@ exe = EXE(
     entitlements_file=None,
     icon=['icon.ico'],
 )
+
 coll = COLLECT(
     exe,
     a.binaries,
