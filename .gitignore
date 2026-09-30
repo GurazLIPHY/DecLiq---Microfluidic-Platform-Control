@@ -1,0 +1,28 @@
+# Environnements virtuels
+venv/
+.venv/
+env/
+
+# Fichiers de cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs machine et exports temporaires
+decliq_logs.txt
+*.log
+
+# Fichiers de configuration locale et OS
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+Thumbs.db
+Desktop.ini
+
+# Packaging PyInstaller
+build/
+dist/
+*.spec
